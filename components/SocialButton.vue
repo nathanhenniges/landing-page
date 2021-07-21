@@ -6,15 +6,14 @@
       flex
       items-center
       justify-center
-      px-2
-      py-2
+      p-3
       border border-transparent
       text-base
       font-medium
       rounded-md
     "
   >
-    <fa :icon="[iconType, icon]" class="w-5 h-5 text-lg" />
+    <fa :icon="[iconType, icon]" class="text-2xl" />
   </a>
 </template>
 

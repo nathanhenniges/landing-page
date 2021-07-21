@@ -37,25 +37,37 @@
       <div class="grid grid-cols-4 gap-6">
         <SocialButton
           v-if="$config.social.twitter.enabled"
-          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          class="text-white bg-brand-twitter hover:bg-brand-twitter opacity-50"
           icon="twitter"
           :link="$config.social.twitter.url"
         />
         <SocialButton
           v-if="$config.social.facebook.enabled"
-          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          class="
+            text-white
+            bg-brand-facebook
+            hover:bg-brand-facebook hover:opacity-90
+          "
           icon="facebook-f"
           :link="$config.social.facebook.url"
         />
         <SocialButton
           v-if="$config.social.instagram.enabled"
-          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          class="
+            text-white
+            bg-brand-instagram
+            hover:bg-brand-instagram hover:opacity-90
+          "
           icon="instagram"
           :link="$config.social.instagram.url"
         />
         <SocialButton
           v-if="$config.social.calendly.enabled"
-          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          class="
+            text-white
+            bg-brand-calendly
+            hover:bg-brand-calendly hover:opacity-90
+          "
           icon="calendar"
           icon-type="fas"
           :link="$config.social.calendly.url"
