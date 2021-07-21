@@ -41,6 +41,7 @@ export default {
       {
         component: 'fa',
         icons: {
+          solid: ['faCalendar'],
           brands: ['faTwitter', 'faFacebookF', 'faInstagram'],
         },
       },
@@ -95,20 +96,24 @@ export default {
     landing: {
       title: process.env.LANDING_PAGE_TITLE || '',
       title2: process.env.LANDING_PAGE_TITLE_2 || '',
-      substile: process.env.LANDING_PAGE_SUBTITLE || '',
+      subtitle: process.env.LANDING_PAGE_SUBTITLE || '',
     },
     social: {
       twitter: {
         url: process.env.TWITTER || '',
-        enabled: process.env.TWITTER !== '',
+        enabled: process.env.TWITTER !== undefined,
       },
       facebook: {
         url: process.env.FACEBOOK || '',
-        enabled: process.env.FACEBOOK !== '',
+        enabled: process.env.FACEBOOK !== undefined,
       },
       instagram: {
         url: process.env.INSTAGRAM || '',
-        enabled: process.env.INSTAGRAM !== '',
+        enabled: process.env.INSTAGRAM !== undefined,
+      },
+      calendly: {
+        url: process.env.CALENDLY || '',
+        enabled: process.env.CALENDLY !== undefined,
       },
     },
   },

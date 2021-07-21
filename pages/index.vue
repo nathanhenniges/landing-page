@@ -34,51 +34,32 @@
       {{ $config.landing.subtitle }}
     </p>
     <div class="mt-10 sm:flex justify-center">
-      <div class="rounded-md shadow">
-        <a
-          href="#"
-          class="
-            w-full
-            flex
-            items-center
-            justify-center
-            px-8
-            py-3
-            border border-transparent
-            text-base
-            font-medium
-            rounded-md
-            text-white
-            bg-indigo-600
-            hover:bg-indigo-700
-            md:py-4 md:text-lg md:px-10
-          "
-        >
-          Get started
-        </a>
-      </div>
-      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-        <a
-          href="#"
-          class="
-            w-full
-            flex
-            items-center
-            justify-center
-            px-8
-            py-3
-            border border-transparent
-            text-base
-            font-medium
-            rounded-md
-            text-indigo-600
-            bg-white
-            hover:bg-gray-50
-            md:py-4 md:text-lg md:px-10
-          "
-        >
-          Live demo
-        </a>
+      <div class="grid grid-cols-4 gap-6">
+        <SocialButton
+          v-if="$config.social.twitter.enabled"
+          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          icon="twitter"
+          :link="$config.social.twitter.url"
+        />
+        <SocialButton
+          v-if="$config.social.facebook.enabled"
+          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          icon="facebook-f"
+          :link="$config.social.facebook.url"
+        />
+        <SocialButton
+          v-if="$config.social.instagram.enabled"
+          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          icon="instagram"
+          :link="$config.social.instagram.url"
+        />
+        <SocialButton
+          v-if="$config.social.calendly.enabled"
+          class="text-white bg-indigo-600 hover:bg-indigo-700"
+          icon="calendar"
+          icon-type="fas"
+          :link="$config.social.calendly.url"
+        />
       </div>
     </div>
   </div>

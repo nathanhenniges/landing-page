@@ -37,6 +37,13 @@ module.exports = {
           800: '#203257',
           900: '#16213A',
         },
+        brand: {
+          twitter: '#1da1f2',
+          facebook: '#1877f2',
+          instagram: '#c13584',
+          calendly: '#006BFF',
+          linkedin: '#0077b5',
+        },
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
