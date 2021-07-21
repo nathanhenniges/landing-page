@@ -41,25 +41,7 @@ export default {
       {
         component: 'fa',
         icons: {
-          regular: ['faMoon'],
-          solid: [
-            'faCaretDown',
-            'faPlus',
-            'faTrash',
-            'faSun',
-            'faCheck',
-            'faSkull',
-            'faCog',
-            'faLock',
-            'faUnlock',
-            'faMapMarkerAlt',
-            'faCalendar',
-            'faArrowLeft',
-            'faCircle',
-            'faHome',
-            'faExclamationTriangle',
-          ],
-          brands: ['faGoogle', 'faTwitter', 'faGithub'],
+          brands: ['faTwitter', 'faFacebookF', 'faInstagram'],
         },
       },
     ],
@@ -105,6 +87,30 @@ export default {
    */
   purgeCSS: {
     whitelist: ['dark'],
+  },
+  /*
+   ** Runtime configuration
+   */
+  publicRuntimeConfig: {
+    landing: {
+      title: process.env.LANDING_PAGE_TITLE || '',
+      title2: process.env.LANDING_PAGE_TITLE_2 || '',
+      substile: process.env.LANDING_PAGE_SUBTITLE || '',
+    },
+    social: {
+      twitter: {
+        url: process.env.TWITTER || '',
+        enabled: process.env.TWITTER !== '',
+      },
+      facebook: {
+        url: process.env.FACEBOOK || '',
+        enabled: process.env.FACEBOOK !== '',
+      },
+      instagram: {
+        url: process.env.INSTAGRAM || '',
+        enabled: process.env.INSTAGRAM !== '',
+      },
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
