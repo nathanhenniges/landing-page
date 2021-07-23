@@ -55,6 +55,7 @@ export default {
         },
       },
     ],
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -88,6 +89,10 @@ export default {
    */
   purgeCSS: {
     whitelist: ['dark'],
+  },
+
+  googleAnalytics: {
+    id: process.env.GA_TRACKING_ID,
   },
   /*
    ** Runtime configuration
